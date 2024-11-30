@@ -1,0 +1,100 @@
+body {
+    font-family: Arial , sans-serif;
+    margin: 0; /* Sayfanın kenar boşluklarını sıfırlama*/
+    padding: 0; /* Sayfanın iç boşluklarını sıfırlama*/
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center; /* Başlığı ortalamak için */
+    margin: 20px 0; /* Başlık için üst ve alt boşluk*/
+    color: #444;
+}
+
+/* Liste Düzenlemesi*/
+
+ul {
+    list-style-type: none; /*liste işaretlerini kaldırdık* (.) */
+    padding: 0; /* Listenin iç boşluklarını sıfırladık */
+    max-width: 600px; /* Listenin maks genişliği*/
+    margin: 20px auto; /* Liste merkezinin hizalanması*/
+    
+}
+
+/* Liste Öğelerini Düzenleme */
+
+li {
+    display: flex; /* Ögeleri yatay düzenlemek */
+    justify-content: space-between; /* Ogeler arası boşlugu dagıtımak */
+    align-items: center; /* Liste ögelerini dikey olarak ortalaDık */
+    padding: 10px; /* 10px iç boşluk */
+    margin: 5px 0; /*ögeler arası dik boşluk*/
+    background-color: #fff;
+    border: 1px solid #ddd; /* Açık gri ince kenar ekledik her bir todo için */
+    border-radius: 5px; /* Her ögenin kenarını hafif yuvarladık */
+    box-shadow: 0 2px 4px rgba(0 , 0 , 0 , 0.1);
+
+}
+
+li span {
+    flex-grow: 1; /*Metin alanını esnettik */
+    word-wrap: break-word; /* Uzun metni bir sonraki satıra kaydırdık */
+    margin-right: 10px;
+}
+
+li .actions {
+    display: flex; /* Butonları yatay hizalar */
+    gap: 10px; /* Butonlar arasına boşluk koyar */
+}
+
+/* Checkbox düzeni */
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Checkbox ile metin arası boşluk*/
+
+}
+
+/* Link */
+
+a{
+    text-decoration: none;
+    color: #007BFF;
+    margin: 0 5px; /* Linkler arası yatay boşluk */
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+/* Form */
+
+form {
+    text-align: center;
+    margin: 20px 0; /* Formun üst ve alt boşlukları */
+
+}
+
+form input[type="text"] {
+    padding: 10px; /*Giriş kutusunun iç boşlugu*/
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /*İnput ve buton arası boşluk   */
+
+}
+
+form button {
+
+    padding: 10px 20px; /*buton iç boşlugu (height - width sırasıyla)*/
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
