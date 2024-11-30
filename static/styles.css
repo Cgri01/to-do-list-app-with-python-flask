@@ -6,6 +6,11 @@ body {
     color: #333;
 }
 
+body.dark-theme {
+    background-color: #333;
+    color: #333;
+}
+
 h1 {
     text-align: center; /* Başlığı ortalamak için */
     margin: 20px 0; /* Başlık için üst ve alt boşluk*/
@@ -96,5 +101,42 @@ form button {
 }
 
 form button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Elemanları (Dark Theme için) */
+body.dark-theme input, 
+body.dark-theme button {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+body.dark-theme button {
+  background-color: #444;
+}
+
+body.dark-theme button:hover {
+  background-color: #555;
+}
+
+
+/* Toggle Theme Button*/
+.toggle-theme-btn {
+    position: fixed; /*Her zaman görünür kılma*/
+    top: 10px; /* Sayfanın üstünden biraz bosluk */
+    right: 10px; /* Sağ tarafa sabitlemek */
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0px 4px 6px rgba(0 , 0 , 0 , 0.1);
+
+}
+
+.toggle-theme-btn:hover {
     background-color: #0056b3;
 }

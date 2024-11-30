@@ -4,6 +4,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <meta charset = "UTF-8">
     <title>Edit</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const currentTheme = localStorage.getItem('theme');
+          if (currentTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+          }
+        });
+      </script>
+
+
 </head>
 
 <body>
