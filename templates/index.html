@@ -18,6 +18,16 @@
 <body>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
     <h1>Todos</h1>
+
+    <form id="search-form">
+      <input type="text" id="search-bar" placeholder="Search todos" onkeyup="filterTodos()">
+      <select id="filter" onchange="filterTodos()">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="pending">Pending</option>
+      </select>
+    </form>
+
     <button class="toggle-theme-btn" onclick="toggleTheme()"> Dark </button>
     <ul>
         {% for todo in todos %}
